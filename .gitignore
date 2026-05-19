@@ -1,0 +1,10 @@
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.env
+*.log
+results/r2/R2-*.json
+results/r2/completed_variants.txt
+results/r2/full-auto-*.log
+results/r2/matrix-*.log
