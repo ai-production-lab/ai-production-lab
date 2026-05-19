@@ -3,8 +3,8 @@
 set -euo pipefail
 
 _SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
-_REPO_ROOT="$(cd "$_SCRIPT_DIR/.." && pwd)"
-ROOT="${VLLM_TUNING_ROOT:-$_REPO_ROOT}"
+_ROUND2_ROOT="$(cd "$_SCRIPT_DIR/.." && pwd)"
+ROOT="${VLLM_TUNING_ROOT:-$_ROUND2_ROOT}"
 RUNNER="$ROOT/scripts/run_round2_variant.sh"
 SCOPE="${1:-P0}"
 STOP_ON_FAIL="${STOP_ON_FAIL:-0}"

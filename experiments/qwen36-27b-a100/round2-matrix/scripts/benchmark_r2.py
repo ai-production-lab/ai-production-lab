@@ -33,10 +33,10 @@ def build_parser() -> argparse.ArgumentParser:
     parser.add_argument("--label", required=True, help="Variant id, e.g. R2-A0.")
     parser.add_argument("--url", default=DEFAULT_URL)
     parser.add_argument("--model", default=DEFAULT_MODEL)
-    repo_root = Path(__file__).resolve().parent.parent
+    _round2_root = Path(__file__).resolve().parent.parent
     parser.add_argument(
         "--out-dir",
-        default=str(repo_root / "results" / "r2"),
+        default=str(_round2_root / "results"),
     )
     parser.add_argument("--timeout", type=int, default=900)
     parser.add_argument("--run-b6", action="store_true", help="Run optional 2048-token test.")

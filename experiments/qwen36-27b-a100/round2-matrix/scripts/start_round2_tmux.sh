@@ -5,8 +5,8 @@ set -euo pipefail
 SESSION="${VLLM_R2_SESSION:-vllm-r2}"
 SCOPE="${1:-P0}"
 _SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
-_REPO_ROOT="$(cd "$_SCRIPT_DIR/.." && pwd)"
-ROOT="${VLLM_TUNING_ROOT:-$_REPO_ROOT}"
+_ROUND2_ROOT="$(cd "$_SCRIPT_DIR/.." && pwd)"
+ROOT="${VLLM_TUNING_ROOT:-$_ROUND2_ROOT}"
 LOG="$ROOT/results/r2/matrix-${SCOPE}.log"
 
 mkdir -p "$ROOT/results/r2"

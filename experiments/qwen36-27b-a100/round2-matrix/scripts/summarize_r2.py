@@ -112,10 +112,10 @@ def row_from_report(report: dict[str, Any]) -> dict[str, str]:
 def main() -> int:
     """CLI entrypoint."""
     parser = argparse.ArgumentParser()
-    repo_root = Path(__file__).resolve().parent.parent
+    _round2_root = Path(__file__).resolve().parent.parent
     parser.add_argument(
         "--r2-dir",
-        default=str(repo_root / "results" / "r2"),
+        default=str(_round2_root / "results"),
     )
     parser.add_argument("--out-csv", default="")
     args = parser.parse_args()

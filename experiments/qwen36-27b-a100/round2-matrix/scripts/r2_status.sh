@@ -5,8 +5,8 @@ set -euo pipefail
 export TZ="${TZ:-Asia/Shanghai}"
 
 _SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
-_REPO_ROOT="$(cd "$_SCRIPT_DIR/.." && pwd)"
-ROOT="${VLLM_TUNING_ROOT:-$_REPO_ROOT}"
+_ROUND2_ROOT="$(cd "$_SCRIPT_DIR/.." && pwd)"
+ROOT="${VLLM_TUNING_ROOT:-$_ROUND2_ROOT}"
 R2="$ROOT/results/r2"
 
 echo "===== R2 STATUS $(date '+%F %T') ====="

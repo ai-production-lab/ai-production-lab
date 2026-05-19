@@ -4,7 +4,8 @@ __pycache__/
 venv/
 .env
 *.log
-results/r2/R2-*.json
-results/r2/completed_variants.txt
-results/r2/full-auto-*.log
-results/r2/matrix-*.log
+experiments/**/results/R2-*.json
+experiments/**/results/completed_variants.txt
+experiments/**/results/*-auto-*.log
+experiments/**/results/matrix-*.log
+experiments/**/round1-standard-path/results/

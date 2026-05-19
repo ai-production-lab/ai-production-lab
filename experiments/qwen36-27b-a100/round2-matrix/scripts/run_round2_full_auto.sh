@@ -5,8 +5,8 @@ set -euo pipefail
 export TZ="${TZ:-Asia/Shanghai}"
 
 _SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
-_REPO_ROOT="$(cd "$_SCRIPT_DIR/.." && pwd)"
-ROOT="${VLLM_TUNING_ROOT:-$_REPO_ROOT}"
+_ROUND2_ROOT="$(cd "$_SCRIPT_DIR/.." && pwd)"
+ROOT="${VLLM_TUNING_ROOT:-$_ROUND2_ROOT}"
 LOG_DIR="$ROOT/results/r2"
 STAMP="$(date '+%Y%m%d-%H%M%S')"
 MAIN_LOG="$LOG_DIR/full-auto-${STAMP}.log"
