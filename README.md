@@ -33,7 +33,7 @@ bash production/qwen36-27b-128k/docker-run.sh
 | max_model_len | 131072 (128K) |
 | KV | BF16 |
 | prefix + MTP×2 | 开启 |
-| 相对第一轮 T7b B2 | **+20%** tok/s |
+| 相对第一轮主力配置 B2 | **+20%** tok/s |
 
 ## 仓库结构
 
