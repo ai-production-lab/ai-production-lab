@@ -35,11 +35,25 @@ bash production/qwen36-27b-128k/docker-run.sh
 | prefix + MTP×2 | 开启 |
 | 相对第一轮主力配置 B2 | **+20%** tok/s |
 
+## 生产评测（性能 + 能力两套）
+
+对已部署的 vLLM 做标准评测：[eval/README.md](eval/README.md)
+
+```bash
+cp eval/config.env.example eval/config.env   # 改 API 地址
+pip install -r eval/requirements-eval.txt
+bash eval/performance/run_deploy_benchmark.sh      # 套系 A：与 R2-A1 可比
+bash eval/capability/run_evalscope_capability.sh quick  # 套系 B：GSM8K + C-Eval
+```
+
 ## 仓库结构
 
 ```text
 ai-production-lab/
 ├── README.md
+├── eval/                          # 生产评测（性能 / 能力两套）
+│   ├── performance/
+│   └── capability/
 ├── docs/posts/                    # 系列文章（MD）
 │   └── 01-qwen36-a100-vllm-tuning.md
 ├── production/                    # 当前线上配置（与实验分离）

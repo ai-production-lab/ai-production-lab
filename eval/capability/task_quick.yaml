@@ -1,0 +1,17 @@
+# EvalScope 能力评测 — 冒烟（约 20 题/数据集）
+# 用法：evalscope eval --config eval/capability/task_quick.yaml
+# 或通过 run_evalscope_capability.sh quick
+
+model: /models/Qwen3.6-27B
+api_url: http://127.0.0.1:50600/v1
+api_key: EMPTY
+eval_type: openai_api
+datasets:
+  - gsm8k
+  - ceval
+limit: 20
+generation_config:
+  temperature: 1.0
+  top_p: 0.95
+  top_k: 20
+  max_tokens: 2048

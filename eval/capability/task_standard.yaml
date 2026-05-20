@@ -1,0 +1,17 @@
+# EvalScope 能力评测 — 正式（样本更多，耗时长）
+# 按需修改 limit；全量评测可删除 limit 字段
+
+model: /models/Qwen3.6-27B
+api_url: http://127.0.0.1:50600/v1
+api_key: EMPTY
+eval_type: openai_api
+datasets:
+  - gsm8k
+  - ceval
+  - cmmlu
+limit: 100
+generation_config:
+  temperature: 1.0
+  top_p: 0.95
+  top_k: 20
+  max_tokens: 2048

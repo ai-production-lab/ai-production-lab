@@ -3,6 +3,9 @@ __pycache__/
 .venv/
 venv/
 .env
+eval/config.env
+eval/results/**
+!eval/results/BASELINE.template.md
 *.log
 experiments/**/results/R2-*.json
 experiments/**/results/completed_variants.txt
