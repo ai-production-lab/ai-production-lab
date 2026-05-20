@@ -23,12 +23,13 @@ cp eval/config.env.example eval/config.env
 # 2. 安装依赖（建议在独立 venv）
 pip install -r eval/requirements-eval.txt
 
-# 3. 套系 A：性能（在 GPU 服务器上跑，约 5～15 分钟）
+# 3. 套系 A：性能（B5 显存项需在 GPU 服务器上；其余 API 项可 Win11 远程）
 bash eval/performance/run_deploy_benchmark.sh
-bash eval/performance/run_evalscope_perf.sh      # 可选，通用 serving 指标
+bash eval/performance/run_evalscope_perf.sh      # 可选
 
-# 4. 套系 B：能力（可远程 API，quick 约 30～60 分钟，视 limit 而定）
+# 4. 套系 B：能力（Win11 / A100 均可：本机只调 API，推理在 GPU 服务器）
 bash eval/capability/run_evalscope_capability.sh quick
+# Win11：.\eval\capability\run_evalscope_capability.ps1 quick
 # 完整评测：bash eval/capability/run_evalscope_capability.sh standard
 ```
 
@@ -67,3 +68,13 @@ eval/results/
 | `experiments/.../benchmark_r2.py` | 第二轮 14 变体矩阵（改 docker 参数时用） |
 | `eval/performance/run_deploy_benchmark.sh` | **当前生产配置**快照，label=`prod-local-*` |
 | EvalScope | 对外可引用的通用 perf + 能力榜 |
+
+## Win11 与 A100 分工
+
+| 套系 | Win11 工作站 | A100 GPU 服务器 |
+|------|-------------|----------------|
+| **A deploy benchmark** | ✅ 可远程（缺 B5 显存） | ✅ 完整 |
+| **A EvalScope perf** | ✅ 可远程 | ✅ 均可 |
+| **B EvalScope eval** | ✅ **推荐**（装 Python + evalscope 即可） | ✅ 也可 |
+
+套系 B **不要求**在 Win11 上跑模型；只要 HTTP 能访问 `50600`，数据集在本机下载，逐题请求发到 A100 推理即可。
