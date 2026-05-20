@@ -10,7 +10,7 @@
 
 | # | 主题 | 文章 | 实验与生产 |
 |---|------|------|-----------|
-| 1 | 推理基座：Qwen3.6-27B @ 双 A100（**两轮调优**） | [掘金](TODO_JUEJIN_URL) · [全文](docs/posts/01-qwen36-a100-vllm-tuning.md) | [experiments/qwen36-27b-a100/](experiments/qwen36-27b-a100/) |
+| 1 | 推理基座：Qwen3.6-27B @ 双 A100（**两轮调优**） | [掘金](https://juejin.cn/post/7641794682348601363) · [知乎](https://zhuanlan.zhihu.com/p/2040488166298228423) · [全文](docs/posts/01-qwen36-a100-vllm-tuning.md) | [experiments/qwen36-27b-a100/](experiments/qwen36-27b-a100/) |
 | 2 | 运营 Agent MVP | 计划中 | — |
 
 ## 第 1 篇：两轮调优结论
