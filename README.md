@@ -11,7 +11,7 @@
 | # | 主题 | 文章 | 实验与生产 |
 |---|------|------|-----------|
 | 1 | 推理基座：Qwen3.6-27B @ 双 A100（**两轮调优**） | [掘金](https://juejin.cn/post/7641794682348601363) · [知乎](https://zhuanlan.zhihu.com/p/2040488166298228423) · [全文](docs/posts/01-qwen36-a100-vllm-tuning.md) | [experiments/qwen36-27b-a100/](experiments/qwen36-27b-a100/) |
-| 2 | 运营 Agent MVP | 计划中 | — |
+| 2 | Win11 远程评测：性能 + C-Eval + 云端边界 | [掘金](https://juejin.cn/post/7642013733049958426) · [知乎](https://zhuanlan.zhihu.com/p/2041134684831211786) · [全文](docs/posts/02-win11-remote-eval-qwen36.md) | [eval/](eval/) |
 
 ## 第 1 篇：两轮调优结论
 
@@ -55,7 +55,8 @@ ai-production-lab/
 │   ├── performance/
 │   └── capability/
 ├── docs/posts/                    # 系列文章（MD）
-│   └── 01-qwen36-a100-vllm-tuning.md
+│   ├── 01-qwen36-a100-vllm-tuning.md
+│   └── 02-win11-remote-eval-qwen36.md
 ├── production/                    # 当前线上配置（与实验分离）
 │   └── qwen36-27b-128k/
 │       └── docker-run.sh
