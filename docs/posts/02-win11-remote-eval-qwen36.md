@@ -230,7 +230,7 @@ bash capability/run_evalscope_capability.sh quick
 |------|------|------|
 | [第 1 篇](https://juejin.cn/post/7641794682348601363) | 双 A100 部署与 vLLM 两轮调优 | [掘金](https://juejin.cn/post/7641794682348601363) · [知乎](https://zhuanlan.zhihu.com/p/2040488166298228423) |
 | **第 2 篇** | Win11 远程评测与本地/云端边界（本文） | [掘金](https://juejin.cn/post/7642013733049958426) · [知乎](https://zhuanlan.zhihu.com/p/2041134684831211786) |
-| 第 3 篇 | 基于 R2-A1 API 的运营 Agent MVP | 计划中 |
+| [第 3 篇](https://juejin.cn/post/7672975601435213875) | OpenClaw 架构迁移与基础设施债 | [掘金](https://juejin.cn/post/7672975601435213875) · [知乎](https://zhuanlan.zhihu.com/p/2070832208487699726) |
 
 **可复现资源**（[ai-production-lab](https://github.com/ai-production-lab/ai-production-lab)）：
 
@@ -240,6 +240,6 @@ bash capability/run_evalscope_capability.sh quick
 | 评测脚本（通用） | [eval/](https://github.com/ai-production-lab/ai-production-lab/tree/main/eval) |
 | 第 1 篇实验 | [experiments/qwen36-27b-a100/](https://github.com/ai-production-lab/ai-production-lab/tree/main/experiments/qwen36-27b-a100) |
 
-**下一篇预告**：把 OpenAI 兼容 API 接到 Agent 框架，完成公路运营场景第一个可对话 MVP——system prompt、thinking 开关与人机协同边界。
+**下一篇预告**：OpenClaw 架构迁移中的基础设施债——框架启动 75 秒、真正推理只要 0.8 秒时，这笔债何时该还。
 
 欢迎在评论区交流：你们远程调 vLLM 时，**能力榜和性能榜**是分开测还是混在一起的？

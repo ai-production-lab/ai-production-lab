@@ -328,7 +328,7 @@ B2（util=0.94）虽然跑通了，但只剩 3844 MiB 显存余量（不到 5%�
 |------|------|------|
 | **第 1 篇** | 双 A100 部署与调优 Qwen3.6-27B（本文） | [掘金](https://juejin.cn/post/7641794682348601363) · [知乎](https://zhuanlan.zhihu.com/p/2040488166298228423) |
 | [第 2 篇](02-win11-remote-eval-qwen36.md) | Win11 远程评测与本地/云端边界 | [掘金](https://juejin.cn/post/7642013733049958426) · [知乎](https://zhuanlan.zhihu.com/p/2041134684831211786) |
-| 第 3 篇 | 基于 R2-A1 API 的运营 Agent MVP | 计划中 |
+| [第 3 篇](https://juejin.cn/post/7672975601435213875) | OpenClaw 架构迁移与基础设施债 | [掘金](https://juejin.cn/post/7672975601435213875) · [知乎](https://zhuanlan.zhihu.com/p/2070832208487699726) |
 
 **可复现资源**（GitHub [ai-production-lab](https://github.com/ai-production-lab)）：
 
