@@ -13,6 +13,7 @@
 | 1 | 推理基座：Qwen3.6-27B @ 双 A100（**两轮调优**） | [掘金](https://juejin.cn/post/7641794682348601363) · [知乎](https://zhuanlan.zhihu.com/p/2040488166298228423) · [全文](docs/posts/01-qwen36-a100-vllm-tuning.md) | [experiments/qwen36-27b-a100/](experiments/qwen36-27b-a100/) |
 | 2 | Win11 远程评测：性能 + C-Eval + 云端边界 | [掘金](https://juejin.cn/post/7642013733049958426) · [知乎](https://zhuanlan.zhihu.com/p/2041134684831211786) · [全文](docs/posts/02-win11-remote-eval-qwen36.md) | [eval/](eval/) |
 | 3 | OpenClaw 架构迁移：基础设施债的偿还时机 | [掘金](https://juejin.cn/post/7672975601435213875) · [知乎](https://zhuanlan.zhihu.com/p/2070832208487699726) · [全文](docs/posts/03-openclaw-infra-debt.md) | — |
+| 4 | DeepSeek Harness vs OpenClaw：两种插件化哲学 | 待发布 · [全文](docs/posts/04-harness-vs-openclaw-plugin.md) | — |
 
 ## 第 1 篇：两轮调优结论
 
@@ -58,7 +59,8 @@ ai-production-lab/
 ├── docs/posts/                    # 系列文章（MD）
 │   ├── 01-qwen36-a100-vllm-tuning.md
 │   ├── 02-win11-remote-eval-qwen36.md
-│   └── 03-openclaw-infra-debt.md
+│   ├── 03-openclaw-infra-debt.md
+│   └── 04-harness-vs-openclaw-plugin.md
 ├── production/                    # 当前线上配置（与实验分离）
 │   └── qwen36-27b-128k/
 │       └── docker-run.sh

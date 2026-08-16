@@ -88,5 +88,6 @@ openclaw-lark 的「停更」终归是暂时的。等 OpenClaw 2026.7.2 收敛�
 | [第 1 篇](https://juejin.cn/post/7641794682348601363) | 双 A100 部署与 vLLM 两轮调优 | [掘金](https://juejin.cn/post/7641794682348601363) · [知乎](https://zhuanlan.zhihu.com/p/2040488166298228423) |
 | [第 2 篇](https://juejin.cn/post/7642013733049958426) | Win11 远程评测与本地/云端边界 | [掘金](https://juejin.cn/post/7642013733049958426) · [知乎](https://zhuanlan.zhihu.com/p/2041134684831211786) |
 | **第 3 篇** | OpenClaw 架构迁移与基础设施债（本文） | [掘金](https://juejin.cn/post/7672975601435213875) · [知乎](https://zhuanlan.zhihu.com/p/2070832208487699726) |
+| 第 4 篇 | DeepSeek Harness vs OpenClaw 插件化哲学 | 待发布 |
 
 相关仓库：[ai-production-lab](https://github.com/ai-production-lab/ai-production-lab)（系列正文）。本篇是架构分析，无独立实验目录。
